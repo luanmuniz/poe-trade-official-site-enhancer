@@ -4183,8 +4183,8 @@ var initSaveManager = function() {
           debug("Some features are disabled because we've been unable to load Poe.Ninja currency values.")
         }
       });
-      waitFor(["app.$store.state.persistant.tab[0]"], function () {
-        tabSelected(app.$store.state.persistant.tab);
+      waitFor(["app.$store.state.persistent.tab[0]"], function () {
+        tabSelected(app.$store.state.persistent.tab);
       });
       if (getSetting('trackContactedOnCurrencySearches')) {
         $(document).on('click', '.slider-middle textarea', function(e) {
